@@ -7,9 +7,8 @@ async function getVideoFromCam() {
     const stream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: false,
-        facingMode: {
-            exact: 'environment'
-          }
+        facingMode:'environment'
+          
     });
     
 const video = document.getElementById('video');
